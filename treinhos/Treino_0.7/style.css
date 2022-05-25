@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(32, 31, 31);
+    font: normal 15pt Arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+select#txttab{
+    width: 200px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
