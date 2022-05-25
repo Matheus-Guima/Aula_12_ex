@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    De onde você é? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id= "ps">
+
+    </div>
+
+    <script>
+        function clicar(){
+            var Pais = document.querySelector('input#txtpais')
+            var ps = document.querySelector('div#ps')
+
+            var pis = String(Pais.value)
+            ps.innerHTML = `<p>Seu páis é ${pis}</p>`
+            if(pis == 'Brasil'){
+                ps.innerHTML +='<p>Bem vindo de volta!</p>'
+            }else{
+                ps.innerHTML +='<p>Bem vindo ao nosso páis, estrangeiro!</p>'
+            }
+        } 
+    </script>
+</body>
+</html>
